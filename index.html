@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serverless To-Do App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto bg-white shadow-xl rounded-xl p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Serverless To-Do App</h1>
+
+    <div class="flex mb-4">
+      <input id="todoInput" type="text"
+        class="flex-grow border px-3 py-2 rounded-l-lg"
+        placeholder="Add a new task" />
+      <button onclick="addTodo()"
+        class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700">
+        Add
+      </button>
+    </div>
+
+    <div class="flex justify-between mb-4">
+      <button onclick="setFilter('all')" class="filter-btn">All</button>
+      <button onclick="setFilter('active')" class="filter-btn">Active</button>
+      <button onclick="setFilter('completed')" class="filter-btn">Completed</button>
+    </div>
+
+    <ul id="todoList" class="space-y-3"></ul>
+  </div>
+
+  <style>
+    .filter-btn {
+      padding: 6px 12px;
+      background: #e5e7eb;
+      border-radius: 6px;
+    }
+    .filter-btn.active {
+      background: #3b82f6;
+      color: white;
+    }
+  </style>
+</body>
+</html>

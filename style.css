@@ -1,0 +1,18 @@
+.filter-btn {
+  padding: 8px 14px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.05s;
+}
+
+.filter-btn:hover {
+  background: #d1d5db; /* tailwind gray-300 */
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: #3b82f6;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
+}
