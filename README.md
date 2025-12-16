@@ -24,7 +24,7 @@ Frontend (S3) → API Gateway → Lambda → DynamoDB
 
 ## 🌐 Live Demo
 S3 Website URL:
-(paste your S3 website link here)
+[(http://cloud-todo-frontend-umera.s3-website.ap-south-1.amazonaws.com)]
 
 ## 👩‍💻 Author
 Umera
